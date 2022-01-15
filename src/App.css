@@ -1,0 +1,270 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+ /* aqui esta la imagen de fondo  de todo  el body */
+
+  body {
+   /* height: 100vh;
+  width: 100vw;   */
+   background-image: url(./rick\ and\ morty.png) ; 
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-size: cover;
+}  
+
+.App {
+  text-align: center;
+  padding: 200px;
+}
+
+.box {
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+  height: 30px;
+  width: 400px;
+  opacity: 0.5;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Estilos de  card con toda la info de los residentes */
+.container-card {
+   
+width: 430px;
+height: 200px;
+background-position: left  center;
+position: relative;
+right: 20px;
+top: 60px; 
+border: 5px solid black;
+margin: 20px;
+ float: left;
+border-radius: 20px;
+box-shadow: inset 10px 10px 20px 1px aqua;
+color: white;
+
+
+
+}
+
+.img {
+
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: relative ;
+  left: 150px;
+  top: 35px;
+}
+
+.name {
+
+  position: relative;
+  top: 10px; 
+  width: 100px;
+  border-radius: 4px solid black;
+  text-align: left;
+}
+
+.status {
+
+  position: relative;
+  bottom: 70px;
+  right: 120px;
+}
+
+.origin {
+  position: relative;
+  bottom: 50px;
+   right: 60px; 
+ 
+
+}
+
+.episodies {
+  position: relative;
+  bottom: 30px;
+  right: 50px;
+  text-align: center;
+}
+
+/* Aqui va la parte media el baner donde la sale la info de los personajes  */
+
+.baner {
+  height: 140px;
+  width: 1000px;
+  border: 4px solid black;
+  border-radius: 30px;
+   color: aqua;
+   box-shadow: inset 10px 10px 20px 1px aqua;
+  position: relative;
+  bottom: 100px;
+   
+}
+
+.name-baner {
+  position: relative;
+  position: center;
+  top: 7px;
+}
+
+.dimension {
+  position: relative;
+  right: 320px;
+  top: 30px;
+}
+
+.amount {
+  position: relative;
+  top: 8px;
+
+}
+
+.type {
+  position: relative;
+  left: 340px;
+  bottom: 8px;
+}
+.rick {
+  height: 200px;
+  width: 300px;
+}
+.name-person {
+
+  color: aqua;
+  position: relative;
+  bottom: 80px;
+  right: 350px;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.btn {
+
+  position: relative;
+  top: 20px;
+  right: 220px;
+  height: 30px;
+  width: 120px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 4px;
+  transition: 0.2;
+}
+
+.btn:hover {
+    box-shadow: 15px 0px 10px aqua, 15px 0px 40px aqua, 15px 0px 80px aqua;
+  background: aqua;
+
+}
+
+/* codigo para  hacer la pagina resposive */
+
+@media screen and  (max-width:  360px) {
+
+  .body  {
+    max-width: 100%;
+   }
+   .container-card {
+     background-position: 50%;
+   }
+   .baner {
+    max-width: 100%;   
+    
+   }
+
+   .name-baner {
+     max-width: 100%;
+     font-size: 10px;
+    
+ 
+   }
+   .dimension {
+     max-width: 100%;
+     font-size: 10px;
+    
+ 
+   }
+   .amount {
+     max-width: 100%;
+     font-size: 10px;
+    
+ 
+
+   }
+   .type {
+     max-width: 100%;
+     font-size: 10px;
+   }
+   .btn {
+     max-width: 100%;
+   }
+   
+}
+
+@media screen and  (max-width:  1366px) {
+
+  .body  {
+   max-width: 100%;
+  }
+  .container-card {
+    background-position: 50%;
+  }
+  .baner {
+   max-width: 100%;
+   
+  }
+  .btn {
+    max-width: 100%;
+  }
+
+  
+}
