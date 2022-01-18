@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useState, useEffect }from 'react';
 import './App.css';
 import Locationinfo  from './Componets/Locationinfo';
-import ResidentInfo  from './Componets/ResidentInfo';
 import ResidentsList from './Componets/ResidentsList';
 import SearchBox from './Componets/SearchBox';
 

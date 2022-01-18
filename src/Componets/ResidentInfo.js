@@ -11,7 +11,7 @@ useEffect ( () => {
                   axios.get ( residentUrl)
                  .then( res => setResindent (res.data));
 
-    }, [] );
+    }, [residentUrl] );
  
     console.log(resident)
     
@@ -23,7 +23,7 @@ useEffect ( () => {
                          <b>Name: {resident.name}</b> </span>
             </div> 
              <div> 
-                        <img className='img' src= {resident.image}></img>
+                        <img className='img' src= {resident.image} alt =""></img>
                                     </div>
                  <div>
                       <span className='status'>
