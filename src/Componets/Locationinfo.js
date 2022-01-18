@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios'; 
-import { useState, useEffect }from 'react';
+
 
 
 //prop de los personajes  la cual viene desde App  ty sirve  para  que se cargue el estado 
